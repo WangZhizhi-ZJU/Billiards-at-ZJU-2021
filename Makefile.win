@@ -1,0 +1,141 @@
+# Project: Billiards
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+RES      = ./ProjectFile/CompiledObj/Billiards_private.res
+OBJ      = ./ProjectFile/CompiledObj/main.o ./ProjectFile/CompiledObj/exceptio.o ./ProjectFile/CompiledObj/genlib.o ./ProjectFile/CompiledObj/graphics.o ./ProjectFile/CompiledObj/linkedlist.o ./ProjectFile/CompiledObj/random.o ./ProjectFile/CompiledObj/media.o ./ProjectFile/CompiledObj/newwindow.o ./ProjectFile/CompiledObj/physics.o ./ProjectFile/CompiledObj/vector.o ./ProjectFile/CompiledObj/text.o ./ProjectFile/CompiledObj/console.o ./ProjectFile/CompiledObj/callback.o ./ProjectFile/CompiledObj/initial.o ./ProjectFile/CompiledObj/pictures.o ./ProjectFile/CompiledObj/openfile.o ./ProjectFile/CompiledObj/gui.o ./ProjectFile/CompiledObj/writeBilliardsDB.o ./ProjectFile/CompiledObj/writeSoundDB.o ./ProjectFile/CompiledObj/strlib.o ./ProjectFile/CompiledObj/http.o ./ProjectFile/CompiledObj/http_parser.o ./ProjectFile/CompiledObj/krypton.o ./ProjectFile/CompiledObj/utf8togb2312.o ./ProjectFile/CompiledObj/ai.o ./ProjectFile/CompiledObj/textbox.o ./ProjectFile/CompiledObj/exp.o ./ProjectFile/CompiledObj/tooltips.o ./ProjectFile/CompiledObj/timesys.o ./ProjectFile/CompiledObj/wave.o ./ProjectFile/CompiledObj/user.o ./ProjectFile/CompiledObj/sets.o ./ProjectFile/CompiledObj/save.o ./ProjectFile/CompiledObj/course.o ./ProjectFile/CompiledObj/setting.o ./ProjectFile/CompiledObj/register.o ./ProjectFile/CompiledObj/error.o $(RES)
+LINKOBJ  = ./ProjectFile/CompiledObj/main.o ./ProjectFile/CompiledObj/exceptio.o ./ProjectFile/CompiledObj/genlib.o ./ProjectFile/CompiledObj/graphics.o ./ProjectFile/CompiledObj/linkedlist.o ./ProjectFile/CompiledObj/random.o ./ProjectFile/CompiledObj/media.o ./ProjectFile/CompiledObj/newwindow.o ./ProjectFile/CompiledObj/physics.o ./ProjectFile/CompiledObj/vector.o ./ProjectFile/CompiledObj/text.o ./ProjectFile/CompiledObj/console.o ./ProjectFile/CompiledObj/callback.o ./ProjectFile/CompiledObj/initial.o ./ProjectFile/CompiledObj/pictures.o ./ProjectFile/CompiledObj/openfile.o ./ProjectFile/CompiledObj/gui.o ./ProjectFile/CompiledObj/writeBilliardsDB.o ./ProjectFile/CompiledObj/writeSoundDB.o ./ProjectFile/CompiledObj/strlib.o ./ProjectFile/CompiledObj/http.o ./ProjectFile/CompiledObj/http_parser.o ./ProjectFile/CompiledObj/krypton.o ./ProjectFile/CompiledObj/utf8togb2312.o ./ProjectFile/CompiledObj/ai.o ./ProjectFile/CompiledObj/textbox.o ./ProjectFile/CompiledObj/exp.o ./ProjectFile/CompiledObj/tooltips.o ./ProjectFile/CompiledObj/timesys.o ./ProjectFile/CompiledObj/wave.o ./ProjectFile/CompiledObj/user.o ./ProjectFile/CompiledObj/sets.o ./ProjectFile/CompiledObj/save.o ./ProjectFile/CompiledObj/course.o ./ProjectFile/CompiledObj/setting.o ./ProjectFile/CompiledObj/register.o ./ProjectFile/CompiledObj/error.o $(RES)
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -mwindows -lwinmm -lmsimg32 -lole32 -loleaut32 -luuid  -limm32 -lVersion -lcomdlg32 -lws2_32 -lcomctl32
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"./ProjectFile/LibToolTips" -I"./ProjectFile/Public" -I"./ProjectFile/LibGraphics" -I"./ProjectFile/LibMedia" -I"./ProjectFile/LibNewWindow" -I"./ProjectFile/LibPictures" -I"./ProjectFile/Test" -I"./ProjectFile/LibPhysics" -I"./ProjectFile/LibVector" -I"./ProjectFile/LibText" -I"./ProjectFile/LibConsole" -I"./ProjectFile/LibCallback" -I"./ProjectFile/LibOpenFile" -I"./ProjectFile/LibGUI" -I"./ProjectFile/LibInitial" -I"./ProjectFile/LibWeb" -I"./ProjectFile/LibAI" -I"./ProjectFile/LibTimeSys" -I"./ProjectFile/LibUser" -I"./ProjectFile/LibSave" -I"./ProjectFile/LibCourse" -I"./ProjectFile/LibSetting" -I"./ProjectFile/LibRegister" -I"./ProjectFile/LibError"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++" -I"./ProjectFile/LibToolTips" -I"./ProjectFile/Public" -I"./ProjectFile/LibGraphics" -I"./ProjectFile/LibMedia" -I"./ProjectFile/LibNewWindow" -I"./ProjectFile/LibPictures" -I"./ProjectFile/Test" -I"./ProjectFile/LibPhysics" -I"./ProjectFile/LibVector" -I"./ProjectFile/LibText" -I"./ProjectFile/LibConsole" -I"./ProjectFile/LibCallback" -I"./ProjectFile/LibOpenFile" -I"./ProjectFile/LibGUI" -I"./ProjectFile/LibInitial" -I"./ProjectFile/LibWeb" -I"./ProjectFile/LibAI" -I"./ProjectFile/LibTimeSys" -I"./ProjectFile/LibUser" -I"./ProjectFile/LibSave" -I"./ProjectFile/LibCourse" -I"./ProjectFile/LibSetting" -I"./ProjectFile/LibRegister" -I"./ProjectFile/LibError"
+BIN      = Compiled/Billiards.exe
+CXXFLAGS = $(CXXINCS) -std=c++11
+CFLAGS   = $(INCS) -std=c++11
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+./ProjectFile/CompiledObj/main.o: main.c
+	$(CC) -c main.c -o ./ProjectFile/CompiledObj/main.o $(CFLAGS)
+
+./ProjectFile/CompiledObj/exceptio.o: ProjectFile/LibGraphics/exceptio.c
+	$(CC) -c ProjectFile/LibGraphics/exceptio.c -o ./ProjectFile/CompiledObj/exceptio.o $(CFLAGS)
+
+./ProjectFile/CompiledObj/genlib.o: ProjectFile/LibGraphics/genlib.c
+	$(CC) -c ProjectFile/LibGraphics/genlib.c -o ./ProjectFile/CompiledObj/genlib.o $(CFLAGS)
+
+./ProjectFile/CompiledObj/graphics.o: ProjectFile/LibGraphics/graphics.c
+	$(CC) -c ProjectFile/LibGraphics/graphics.c -o ./ProjectFile/CompiledObj/graphics.o $(CFLAGS)
+
+./ProjectFile/CompiledObj/linkedlist.o: ProjectFile/LibGraphics/linkedlist.c
+	$(CC) -c ProjectFile/LibGraphics/linkedlist.c -o ./ProjectFile/CompiledObj/linkedlist.o $(CFLAGS)
+
+./ProjectFile/CompiledObj/random.o: ProjectFile/LibGraphics/random.c
+	$(CC) -c ProjectFile/LibGraphics/random.c -o ./ProjectFile/CompiledObj/random.o $(CFLAGS)
+
+./ProjectFile/CompiledObj/media.o: ProjectFile/LibMedia/media.c
+	$(CC) -c ProjectFile/LibMedia/media.c -o ./ProjectFile/CompiledObj/media.o $(CFLAGS)
+
+./ProjectFile/CompiledObj/newwindow.o: ProjectFile/LibNewWindow/newwindow.c
+	$(CC) -c ProjectFile/LibNewWindow/newwindow.c -o ./ProjectFile/CompiledObj/newwindow.o $(CFLAGS)
+
+./ProjectFile/CompiledObj/physics.o: ProjectFile/LibPhysics/physics.c
+	$(CC) -c ProjectFile/LibPhysics/physics.c -o ./ProjectFile/CompiledObj/physics.o $(CFLAGS)
+
+./ProjectFile/CompiledObj/vector.o: ProjectFile/LibVector/vector.c
+	$(CC) -c ProjectFile/LibVector/vector.c -o ./ProjectFile/CompiledObj/vector.o $(CFLAGS)
+
+./ProjectFile/CompiledObj/text.o: ProjectFile/LibText/text.c
+	$(CC) -c ProjectFile/LibText/text.c -o ./ProjectFile/CompiledObj/text.o $(CFLAGS)
+
+./ProjectFile/CompiledObj/console.o: ProjectFile/LibConsole/console.c
+	$(CC) -c ProjectFile/LibConsole/console.c -o ./ProjectFile/CompiledObj/console.o $(CFLAGS)
+
+./ProjectFile/CompiledObj/callback.o: ProjectFile/LibCallback/callback.c
+	$(CC) -c ProjectFile/LibCallback/callback.c -o ./ProjectFile/CompiledObj/callback.o $(CFLAGS)
+
+./ProjectFile/CompiledObj/initial.o: ProjectFile/LibInitial/initial.c
+	$(CC) -c ProjectFile/LibInitial/initial.c -o ./ProjectFile/CompiledObj/initial.o $(CFLAGS)
+
+./ProjectFile/CompiledObj/pictures.o: ProjectFile/LibPictures/pictures.c
+	$(CC) -c ProjectFile/LibPictures/pictures.c -o ./ProjectFile/CompiledObj/pictures.o $(CFLAGS)
+
+./ProjectFile/CompiledObj/openfile.o: ProjectFile/LibOpenFile/openfile.c
+	$(CC) -c ProjectFile/LibOpenFile/openfile.c -o ./ProjectFile/CompiledObj/openfile.o $(CFLAGS)
+
+./ProjectFile/CompiledObj/gui.o: ProjectFile/LibGUI/gui.c
+	$(CC) -c ProjectFile/LibGUI/gui.c -o ./ProjectFile/CompiledObj/gui.o $(CFLAGS)
+
+./ProjectFile/CompiledObj/writeBilliardsDB.o: ProjectFile/Test/writeBilliardsDB.c
+	$(CC) -c ProjectFile/Test/writeBilliardsDB.c -o ./ProjectFile/CompiledObj/writeBilliardsDB.o $(CFLAGS)
+
+./ProjectFile/CompiledObj/writeSoundDB.o: ProjectFile/Test/writeSoundDB.c
+	$(CC) -c ProjectFile/Test/writeSoundDB.c -o ./ProjectFile/CompiledObj/writeSoundDB.o $(CFLAGS)
+
+./ProjectFile/CompiledObj/strlib.o: ProjectFile/LibGraphics/strlib.c
+	$(CC) -c ProjectFile/LibGraphics/strlib.c -o ./ProjectFile/CompiledObj/strlib.o $(CFLAGS)
+
+./ProjectFile/CompiledObj/http.o: ProjectFile/LibWeb/http.c
+	$(CC) -c ProjectFile/LibWeb/http.c -o ./ProjectFile/CompiledObj/http.o $(CFLAGS)
+
+./ProjectFile/CompiledObj/http_parser.o: ProjectFile/LibWeb/http_parser.c
+	$(CC) -c ProjectFile/LibWeb/http_parser.c -o ./ProjectFile/CompiledObj/http_parser.o $(CFLAGS)
+
+./ProjectFile/CompiledObj/krypton.o: ProjectFile/LibWeb/krypton.c
+	$(CC) -c ProjectFile/LibWeb/krypton.c -o ./ProjectFile/CompiledObj/krypton.o $(CFLAGS)
+
+./ProjectFile/CompiledObj/utf8togb2312.o: ProjectFile/LibWeb/utf8togb2312.c
+	$(CC) -c ProjectFile/LibWeb/utf8togb2312.c -o ./ProjectFile/CompiledObj/utf8togb2312.o $(CFLAGS)
+
+./ProjectFile/CompiledObj/ai.o: ProjectFile/LibAI/ai.c
+	$(CC) -c ProjectFile/LibAI/ai.c -o ./ProjectFile/CompiledObj/ai.o $(CFLAGS)
+
+./ProjectFile/CompiledObj/textbox.o: ProjectFile/LibText/textbox.c
+	$(CC) -c ProjectFile/LibText/textbox.c -o ./ProjectFile/CompiledObj/textbox.o $(CFLAGS)
+
+./ProjectFile/CompiledObj/exp.o: ProjectFile/LibExp/exp.c
+	$(CC) -c ProjectFile/LibExp/exp.c -o ./ProjectFile/CompiledObj/exp.o $(CFLAGS)
+
+./ProjectFile/CompiledObj/tooltips.o: ProjectFile/LibToolTips/tooltips.c
+	$(CC) -c ProjectFile/LibToolTips/tooltips.c -o ./ProjectFile/CompiledObj/tooltips.o $(CFLAGS)
+
+./ProjectFile/CompiledObj/timesys.o: ProjectFile/LibTimeSys/timesys.c
+	$(CC) -c ProjectFile/LibTimeSys/timesys.c -o ./ProjectFile/CompiledObj/timesys.o $(CFLAGS)
+
+./ProjectFile/CompiledObj/wave.o: ProjectFile/LibMedia/wave.c
+	$(CC) -c ProjectFile/LibMedia/wave.c -o ./ProjectFile/CompiledObj/wave.o $(CFLAGS)
+
+./ProjectFile/CompiledObj/user.o: ProjectFile/LibUser/user.c
+	$(CC) -c ProjectFile/LibUser/user.c -o ./ProjectFile/CompiledObj/user.o $(CFLAGS)
+
+./ProjectFile/CompiledObj/sets.o: ProjectFile/Public/sets.c
+	$(CC) -c ProjectFile/Public/sets.c -o ./ProjectFile/CompiledObj/sets.o $(CFLAGS)
+
+./ProjectFile/CompiledObj/save.o: ProjectFile/LibSave/save.c
+	$(CC) -c ProjectFile/LibSave/save.c -o ./ProjectFile/CompiledObj/save.o $(CFLAGS)
+
+./ProjectFile/CompiledObj/course.o: ProjectFile/LibCourse/course.c
+	$(CC) -c ProjectFile/LibCourse/course.c -o ./ProjectFile/CompiledObj/course.o $(CFLAGS)
+
+./ProjectFile/CompiledObj/setting.o: ProjectFile/LibSetting/setting.c
+	$(CC) -c ProjectFile/LibSetting/setting.c -o ./ProjectFile/CompiledObj/setting.o $(CFLAGS)
+
+./ProjectFile/CompiledObj/register.o: ProjectFile/LibRegister/register.c
+	$(CC) -c ProjectFile/LibRegister/register.c -o ./ProjectFile/CompiledObj/register.o $(CFLAGS)
+
+./ProjectFile/CompiledObj/error.o: ProjectFile/LibError/error.c
+	$(CC) -c ProjectFile/LibError/error.c -o ./ProjectFile/CompiledObj/error.o $(CFLAGS)
+
+./ProjectFile/CompiledObj/Billiards_private.res: Billiards_private.rc 
+	$(WINDRES) -i Billiards_private.rc --input-format=rc -o ./ProjectFile/CompiledObj/Billiards_private.res -O coff 
+
